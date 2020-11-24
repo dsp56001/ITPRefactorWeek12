@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Models
 {
+    /// <summary>
+    /// Static class that holds the menus for a pound
+    /// </summary>
     static class PoundMenus
     {
         public static Menu PoundSelectDog = new Menu()

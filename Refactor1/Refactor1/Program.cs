@@ -26,13 +26,13 @@ namespace Refactor1
             string response = Console.ReadLine();
             int dogPick = int.Parse(response);
 
-            //Check response
+            //Check response for each option. 
             if(dogPick == 1)
             {
                 string bark = dog1.Bark();
                 Console.WriteLine(bark);
             }
-            if(dogPick == 2)
+            if(dogPick == 2)    //This is redundant maybe there is a better way
             {
                 string bark = dog1.Bark();
                 Console.WriteLine(bark);

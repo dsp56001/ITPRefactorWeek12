@@ -4,13 +4,17 @@ using System.Text;
 
 namespace Models
 {
+    /// <summary>
+    /// Console Menu 
+    /// Shows a menu with choices returns the users choice in the form of a string
+    /// </summary>
     class Menu
     {
-        public string Text;
-        public List<String> MenuChoices;
+        public string Text;                 //Text to display in meni
+        public List<String> MenuChoices;    //Menu options
 
-        int selectedIndex;
-        string selectedChoice;
+        int selectedIndex;                  //index users selected as an int
+        string selectedChoice;              //selected string
 
         public Menu()
         {
@@ -19,7 +23,8 @@ namespace Models
         }
         public string ShowMenu()
         {
-            Console.Clear();
+            //May add an option to clear screen
+            //Console.Clear();                //Not sure if we shoudl clear the screen on every menu
             Console.WriteLine(this.Text);
             Console.WriteLine(ShowOptions());
             this.selectedIndex = GetChoiceIndex();

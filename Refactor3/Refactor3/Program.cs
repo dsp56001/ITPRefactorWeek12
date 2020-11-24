@@ -16,6 +16,10 @@ namespace Refactor3
 
             Dog myDog = new Dog();
 
+            //How can I add a cat to the pound?
+            Cat myCat = new Cat();
+
+            //Pound Menus is a static class that can show menus
             while (PoundMenus.PoundSelectDog.ShowMenu() == "Yes")
             {
                 myDog = pound.SelectADog();
